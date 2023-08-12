@@ -3,28 +3,28 @@
 # монеток, которые нужно перевернуть, чтобы все монетки былиповернуты вверх одной и той же стороной. Выведите минимальное
 # количество монет, которые нужно перевернуть.
 
-# import random
+import random
 
-# num_coins=int(input('введите количество монет: '))
-# coins=[]
-# shet0=0
-# shet1=0
-# for i in range(num_coins): 
-#     coins.append(random.randint(0,1))
-# print(coins)
-# for j in coins: 
-#     if j==0: 
-#         shet0+=1
-#     else: 
-#         shet1+=1
+num_coins=int(input('введите количество монет: '))
+coins=[]
+shet0=0
+shet1=0
+for i in range(num_coins): 
+    coins.append(random.randint(0,1))
+print(coins)
+for j in coins: 
+    if j==0: 
+        shet0+=1
+    else: 
+        shet1+=1
 # # проверка корректности рассчета счетчиков shet0 и shet1
-# # print(shet0,shet1)
-# if shet0<shet1:
-#     print(f'нужно перевернуть {shet0} монет')
-# elif shet0>shet1: 
-#     print(f'нужно перевернуть {shet1} монет')
-# else: 
-#     print(f'количество монет лежащих вверх решкой и гербом совпадает, нужно перевернуть {shet0} монет')
+print(shet0,shet1)
+if shet0<shet1:
+    print(f'нужно перевернуть {shet0} монет')
+elif shet0>shet1: 
+    print(f'нужно перевернуть {shet1} монет')
+else: 
+    print(f'количество монет лежащих вверх решкой и гербом совпадает, нужно перевернуть {shet0} монет')
 
 
 # Задача 12: 
@@ -42,32 +42,19 @@ for X in range(1001):
             print(X,Y)
 
 
-# S=int(input('введите сумму чисел: \n'))
-# P=int(input('введите произведение чисел: \n'))
-# Y=0
-# for X in range(1001):
-#     while Y<=1000: 
-#         if X+Y==S and X*Y==P:
-#             print(X,Y)
-#         else:
-#             Y+=1
-        
-
-            
-
 #  Задача 14:
 # Требуется вывести все целые степени двойки (т.е. числа вида 2k), не превосходящие числа N.
 # 10 -> 1 2 4 8
-# try:
-#     N=int(input('введите число: '))
-#     k=0
-#     a=0
-#     while a<N:
-#         print(a)
-#         a=2**k
-#         k+=1
-# except:
-#     print('Некорректный ввод, попробуйте еще раз ')
+try:
+    N=int(input('введите число: '))
+    k=0
+    a=0
+    while a<N:
+        print(a)
+        a=2**k
+        k+=1
+except:
+    print('Некорректный ввод, попробуйте еще раз ')
 
 
 
