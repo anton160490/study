@@ -10,28 +10,28 @@
 # -> 1
 
 # # Вариант 1
-# import random
-# N=int(input('введите количество элементов N: '))
-# massiv=[]
-# for i in range(N):
-#     massiv.append(random.randint(1,10))
-# print(massiv)
-# x=int(input('Введите некоторое число: \n'))
-# print(f"число {x} встречается {massiv.count(x)} раз")
+import random
+N=int(input('введите количество элементов N: '))
+massiv=[]
+for i in range(N):
+    massiv.append(random.randint(1,10))
+print(massiv)
+x=int(input('Введите некоторое число: \n'))
+print(f"число {x} встречается {massiv.count(x)} раз")
 
 # # # Вариант 2
-# import random
-# N=int(input('введите количество элементов N: '))
-# massiv=[]
-# shet=0
-# for i in range(N):
-#     massiv.append(random.randint(1,10))
-# print(massiv)
-# x=int(input('Введите некоторое число: \n'))
-# for j in massiv:
-#     if j==x: 
-#         shet+=1
-# print(f'число {x} встречается {shet} раз')
+import random
+N=int(input('введите количество элементов N: '))
+massiv=[]
+shet=0
+for i in range(N):
+    massiv.append(random.randint(1,10))
+print(massiv)
+x=int(input('Введите некоторое число: \n'))
+for j in massiv:
+    if j==x: 
+        shet+=1
+print(f'число {x} встречается {shet} раз')
 
 
 # Задача 18: Требуется найти в массиве A[1..N] самый близкий по
@@ -45,21 +45,21 @@
 # 6
 # -> 5
 
-# import random
-# N=int(input('введите количество элементов N: '))
-# A=[]
-# for i in range(N):
-#     A.append(random.randint(1,10))
-# print(A)
-# x=int(input('введите число x: '))
-# min=abs(x-A[0])
-# B=A[0] 
-# for j in range(1,len(A)):
-#     y=abs(x-A[j]) # дельта чисел 
-#     if y<min:
-#         B=A[j]
-#         min=x-A[j]
-# print(f"первый найденный ближайший элемент это",{B})
+import random
+N=int(input('введите количество элементов N: '))
+A=[]
+for i in range(N):
+    A.append(random.randint(1,10))
+print(A)
+x=int(input('введите число x: '))
+min=abs(x-A[0])
+B=A[0] 
+for j in range(1,len(A)):
+    y=abs(x-A[j]) # дельта чисел 
+    if y<min:
+        B=A[j]
+        min=x-A[j]
+print(f"первый найденный ближайший элемент это",{B})
 
 # Задача 20: В настольной игре Скрабл (Scrabble) каждая буква имеет определенную
 # ценность. В случае с английским алфавитом очки распределяются так:
