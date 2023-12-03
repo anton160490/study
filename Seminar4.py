@@ -9,20 +9,20 @@
 # 3 6 9 12 15 18
 
 # 6 12
-# import random
+import random
 
-# n=int(input("количество элементов первого множества: "))
-# m=int(input("количество элементов второго множества: "))
-# A=[]
-# B=[]
-# for i in range(n): 
-#     A.append(random.randint(1,20))
-# for i in range(m): 
-#     B.append(random.randint(1,20))
-# A=set(A)
-# B=set(B)
-# C=A.union(B)
-# print(C)
+n=int(input("количество элементов первого множества: "))
+m=int(input("количество элементов второго множества: "))
+A=[]
+B=[]
+for i in range(n): 
+    A.append(random.randint(1,20))
+for i in range(m): 
+    B.append(random.randint(1,20))
+A=set(A)
+B=set(B)
+C=A.union(B)
+print(C)
 
 # Задача 24: В фермерском хозяйстве в Карелии выращивают чернику. Она растет на
 # круглой грядке, причем кусты высажены только по окружности. Таким образом, у
