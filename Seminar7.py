@@ -13,35 +13,35 @@
 # Парам пам-пам
 
 # Вариант 1
-# a=input('введите стихотворение: ')
+a=input('введите стихотворение: ')
 
-# b=a.split()
+b=a.split()
 
-# res=list(map(lambda x: x.count('а'),b))
+res=list(map(lambda x: x.count('а'),b))
 
-# for i in range(len(res)-1): 
-#     if res[i]==res[i+1]: 
-#         print("Парам пам-пам")
-#     else: 
-#         print("Пам парам") 
+for i in range(len(res)-1): 
+    if res[i]==res[i+1]: 
+        print("Парам пам-пам")
+    else: 
+        print("Пам парам") 
 
 
 # # Вариант 2
-# a=input('введите стихотворение: ')
-# b=a.split()
+a=input('введите стихотворение: ')
+b=a.split()
 
-# def sort(f,col): 
-#     return [f(x) for x in col]
+def sort(f,col): 
+    return [f(x) for x in col]
 
-# list=sort(lambda x: x.count('а'),b)
+list=sort(lambda x: x.count('а'),b)
 
-# def fin(f,col): 
-#     if len(f(col))==1: 
-#         print("Парам пам-пам") 
-#     else: 
-#         print("Пам парам")
+def fin(f,col): 
+    if len(f(col))==1: 
+        print("Парам пам-пам") 
+    else: 
+        print("Пам парам")
          
-# fin(set,list) 
+fin(set,list) 
     
 
 # Задача 36: Напишите функцию print_operation_table(operation, num_rows=6, num_columns=6),
@@ -68,7 +68,6 @@ def print_operation_table(operation, num_rows=6,num_columns=6):
     for num_columns in range(1,num_columns+1):
     
         print(*[operation(num_rows,num_columns) for num_rows in range(1,num_rows+1)])
-    
     
 # Вызов
 print_operation_table(lambda x, y: x * y)
