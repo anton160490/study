@@ -128,17 +128,3 @@ while True:
             print("Your number out of range. Try again")
     except: 
         print("You entered something, but it's not number")
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
